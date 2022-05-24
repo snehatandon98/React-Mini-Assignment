@@ -6,15 +6,21 @@ function Electric_Car(){
             FetchItems();
         },[]);
     
+    const [items, setItems] = useState()
+
     const FetchItems=async()=>{
 
         const data = await fetch('https://private-anon-f3930cb735-carsapi1.apiary-mock.com/manufacturers');
-        const jsondata = await data.json();
-        console.log(jsondata)
+        const items = await data.json();
+        console.log(items)
+        setItems(items)
     }
     return(
         <div>
-            <h1>Electric Cars</h1>
+            {items.map(item =>(
+                <h1>{item.name}</h1>
+                ))
+            }
         </div>
     ) 
 }
