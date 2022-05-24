@@ -37,11 +37,9 @@ return (
         <div style={{marginLeft:'auto'}}>
             <Button color="inherit" style={{float:"left", color:"pink"}}>Electric Cars</Button>
             <Button color="inherit" style={{float:"left", color:"pink"}}>Suitability Tool</Button>
-			<Button component={Link} to="/My_Bookings" color="inherit" style={{float:"left", color:"pink"}}>My Bookings</Button>
+			<Button color="inherit" style={{float:"left", color:"pink"}}>My Bookings</Button>
 			<Button color="inherit" style={{float:"left"}}>Sign Out</Button>
-        </div>
-            
-        
+        </div> 
         
 		</Toolbar>
 	</AppBar>
