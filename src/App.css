@@ -13,21 +13,28 @@
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.App-footer {
+  background-color: black;
+  border-top:2px solid;
+  border-bottom:2px solid white ;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
   color: white;
-}
+  font-size: 25px;
+  text-align: right;
+ }
+
+ .Car-Rentals{
+   transform: scale(1.8);
+ }
 
 .App-link {
   color: #61dafb;
 }
-
+.button:hover{
+  background-color: pink;
+}
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
