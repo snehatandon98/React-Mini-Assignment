@@ -14,13 +14,14 @@ function Electric_Car(){
         const items = await data.json();
         console.log(items)
         setItems(items)
+
+       
     }
     return(
         <div>
-            {items.map(item =>(
-                <h1>{item.name}</h1>
-                ))
-            }
+            {items?.map(item =>
+                <h1 key={item.id}>{item.name}</h1>
+                )}
         </div>
     ) 
 }
