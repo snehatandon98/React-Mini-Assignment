@@ -2,44 +2,35 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
 .App-footer {
-  background-color: black;
-  border-top:2px solid;
-  border-bottom:2px solid white ;
+  background-color:black;
+  border-bottom:2px solid white;
   position: fixed;
+  justify-content: right;
+  align-items: right;
   width: 100%;
   bottom: 0;
   color: white;
   font-size: 25px;
-  text-align: right;
  }
 
- .Car-Rentals{
-   transform: scale(1.8);
- }
+nav{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 10vh;
+  background: lightblue;
+  color: black;
+}
 
-.App-link {
-  color: #61dafb;
+.nav-Links{
+  width: 100%;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  list-style: none;
+  padding-right: 50px;
 }
-.button:hover{
-  background-color: pink;
-}
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.nav-heading{
+  padding-left: 30px;
 }
